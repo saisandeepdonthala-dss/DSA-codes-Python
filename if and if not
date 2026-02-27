@@ -1,0 +1,17 @@
+# example arr=[1,2,3,4,5]
+# output arr= [11,12,13,14,15]
+nums= list(map(int, input("Enter elements with space separation").split()))
+print(nums)
+
+#element if found and print if not 
+#arr= [1,2,3,4,5,6,7,8,9,10]
+#elemet[5]
+#input=["elemet"]
+arr= list(map(int, input("Enter elements with space separation").split()))
+key=int(input("Enter the elemet to be searched:"))
+for i in arr:
+    if i==key:
+        print("Element found at index",arr.index(i))
+        break
+else:
+    print("Element not found")
