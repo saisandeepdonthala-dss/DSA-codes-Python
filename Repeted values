@@ -1,0 +1,7 @@
+#write a code to print the repeted values in an array 
+arr= list(map(int,input("Enter values with spaces :").split()))
+freq={}
+for num in arr:
+    freq[num] = freq.get(num,0)+1 
+for k, v, in freq.items():
+    print(k, "->",  v)
