@@ -1,0 +1,6 @@
+#Write a code to find the missing number in a swries of array
+arr=list(map(int, input("Enter values with speces: ").split()))
+n= len(arr)+1 
+e_sum= n*(n+1)//2
+arr_sum = sum(arr)
+print("Missing number: ", e_sum-arr_sum)
