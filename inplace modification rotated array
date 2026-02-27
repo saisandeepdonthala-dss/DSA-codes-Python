@@ -1,0 +1,9 @@
+#inplace modification
+#[1,2,3,4,5] key 1 [2,3,4,5,1]
+
+arr=list(map(int,input("Enter elements: ").split()))
+first=arr[0]
+for i in range(len(arr)-1):
+    arr[i]=arr[i+1]
+arr[-1]= first 
+print("Rotated array: ", arr)
