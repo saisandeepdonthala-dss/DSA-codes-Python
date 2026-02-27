@@ -1,0 +1,9 @@
+#Write a code to remove repeated elements in an
+# array without disturbing its original place value
+
+arr=list(map (int,input("Enter values with spaces: ").split()))
+unique= []
+for i in arr:
+    if i not in unique:
+        unique.append(i)
+print("After deleting duplicates:", unique)
