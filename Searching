@@ -1,0 +1,14 @@
+#write a code to search an element in an array, and print.
+#The index value of the element
+
+arr =list(map(int,input("Enter elements with speces: ").split()))
+key =int(input("Enter the elemet to be searched: "))
+found= False 
+for i in range(len(arr)):
+    if arr[i] == key:
+        print("element found at index: ", i)
+        found= True
+        break 
+if not found:
+    print("Element doesn't exit in the array")
+    
