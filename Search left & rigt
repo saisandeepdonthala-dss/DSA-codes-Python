@@ -1,0 +1,18 @@
+#write a code to search an element using binary search and print the index value of the elemnet
+arr = list(map(int,input("Enter sorted nums: ").split()))
+key =int(input("Elements to be searched:"))
+left=0
+right=len(arr)-1
+found = False
+while left<=right:
+    mid= (left+right)//2
+    if arr[mid]==key:
+        print("Element found at index:", mid)
+        found =True
+        break
+    elif key<arr[mid]:
+        right=mid-1
+    else:
+        left=mid+1
+if not found:
+    print("Element is not found !!!")
