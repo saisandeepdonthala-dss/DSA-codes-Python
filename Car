@@ -1,0 +1,7 @@
+# adding a new pair to the dictionary(dict)
+car={"brand": "Ford","Model":"Mustang","year":1964} 
+car["Color"]="Royal blue"
+car.update({"brand": "benz"}) # updating value using update()
+car["price"] = 3424322 
+car["Warenty"]="10years"
+print(car)
