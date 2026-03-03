@@ -1,0 +1,13 @@
+'''d={}
+print(d)
+print(type(d))'''
+#creating some data oa student and print it 
+
+student={"Name": "Sandeep","Rollno": "23","Branch": "MSC","Percentage":78.5}
+print(student)
+print(student["Name"])
+print(student["Rollno"])
+
+#we can use get method
+print(student.get("Branch"))
+print(student.get("Percentage"))
