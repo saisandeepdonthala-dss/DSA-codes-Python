@@ -1,0 +1,16 @@
+student={
+    "name":"johnwick",
+    "age":30,
+    "Weight":80,
+    "Height":6.2
+}
+print(student)
+student["age"]=28
+print(student)
+print("name" in student)
+print("Height" in student)
+del student["age"]
+print(student)
+print("lenght", len(student))
+print("only keys",student.keys())
+print("only values",student.values())
