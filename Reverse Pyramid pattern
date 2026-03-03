@@ -1,0 +1,10 @@
+#Reverse pyramid pattern
+n=int(input("enter size: "))
+for i in range (n-1, -1, -1):  #rows
+    for s in range (0, n-i-1):
+        print (" ", end=" ")
+    for j in range(0, 2*i+1):   #Colms
+        print("*", end=" ")
+    print()
+
+
