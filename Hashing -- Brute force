@@ -1,0 +1,6 @@
+check ={}  #Hashing
+for i in range(len(arr)):
+    x= target-arr[i]
+    if x in check:
+        print(check[x],i)
+    check[arr[i]]= 1
