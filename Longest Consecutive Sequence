@@ -1,0 +1,15 @@
+''' Write a code to find the length of longest consecutive sequence in
+an array and print the size of sequence '''
+
+num= list(map(int, input ("Vales: ").split()))
+numset= set(num)
+long = 0
+for num in numset:
+    if num-1 not in numset:
+        curr= num
+        length=1 
+        while curr +1 in numset:
+            curr += 1 
+            length += 1 
+        long = max (long, length)
+print(long)
