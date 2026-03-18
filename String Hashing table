@@ -1,0 +1,20 @@
+#write a sample code for string hashing include size
+class hashtable:
+    def __init__(self,size):
+        self.size= size
+        self.table=[[] for _ in range(size) ]
+    def hash_function(self, key):
+        return sum(ord(c) for c in key)
+    def insert(self, key):
+        index= self.hash_function(key)
+        self.table[index].append(key)
+    def display(self):
+        for i in range(self.size):
+            print(f"index{i}-> {self.table}")
+size= int(input("Enter hashtable size: "))
+ht=hashtable(size)
+n= int(input("Enter number if items: "))
+for _ in range(n):
+    s= input("enter a string :")
+    ht.insert(s)
+ht.display()
