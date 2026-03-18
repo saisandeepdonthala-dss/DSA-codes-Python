@@ -1,0 +1,12 @@
+# a code to access class variable using class object:
+
+class student:
+    name="sandeep"
+    branch="msc"
+    rollno=23
+    percentage=72.7
+obj=student()
+print("Name:", obj.name)
+print("Branch:", obj.branch)
+print("RoolNo:", obj.rollno)
+print("Percentage:", obj.percentage)
