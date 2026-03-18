@@ -1,0 +1,11 @@
+# Program to illustrate the use of __init__method (constructor) :
+#constructor
+'''syntax:
+class------:
+def __init__----(attribute, var):'''
+
+class icici():
+    def __init__(self,money):
+        print("Money added to your account: ", money)
+cash=int(input("Enter the amount: "))
+cash=icici(cash)
