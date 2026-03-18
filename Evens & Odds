@@ -1,0 +1,17 @@
+class number:
+    evens=[]
+    odds=[]
+    def __init__ (self, num):
+        self.num= num
+        if num%2==0:
+            number.evens.append(num)
+        else:
+            number.odds.append(num)
+n1= number(11)
+n2= number(22)
+n3= number(33)
+n4= number(44)
+n5= number(55)
+print("Evens number are :", number.evens)
+print("Odds number are :", number.odds)
+
