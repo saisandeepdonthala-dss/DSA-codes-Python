@@ -1,0 +1,14 @@
+# Heapq package operations
+import heapq
+heap= []
+heapq.heappush(heap, 10)
+heapq.heappush(heap, 20)
+heapq.heappush(heap, 30)
+heapq.heappush(heap, 40)
+print(heap)
+x= heapq.heappop(heap)
+print("Remove", x)
+print("Remaining", heap)
+y= heapq.heappop(heap)  
+print("Remove", y)
+print("Remaining", heap)    
