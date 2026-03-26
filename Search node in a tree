@@ -1,0 +1,21 @@
+'''Search node in a tree'''
+class node:
+    def __init__(self, data):
+        self.data= data
+        self.left= None
+        self.right= None
+def search_node(root, key):
+    if not root:
+        return False
+    if root.data == key:
+        return True
+    return search_node(root.left, key) or search_node(root.right, key)
+root = node(int(input("Enter root: ")))
+root.left = node(int(input("Enter left: ")))
+root.right = node(int(input("Enter right: ")))
+root.left.right= node(int(input("Enter left-right: ")))
+key = int(input("Enter key to search: "))
+if search_node(root, key):
+    print("Node found in the tree")
+else:
+    print("Node not found in the tree")
