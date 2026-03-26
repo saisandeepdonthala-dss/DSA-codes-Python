@@ -1,0 +1,5 @@
+import heapq
+heap=[20,5,10,7]
+heapq.heapify(heap)
+print(heapq.heappushpop(heap, 6))
+print(heap)
